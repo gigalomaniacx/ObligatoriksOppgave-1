@@ -13,6 +13,7 @@
     <script>
         //model
         const app = document.getElementById('app');
+        const boxDiv = document.getElementById('boks');
         let planetDropDown;
         let earthWeight;
         let planet;
@@ -33,19 +34,21 @@
         updateView();
         function updateView() {
             app.innerHTML = `
-                <h1>Tjohei da var vi igang!</h1>
-                <input id="earthWeightInput" type="text" value="${earthWeight}"/>
-                <select id="planets">
-                    <option value="Mercury">Mercury</option>
-                    <option value="Venus">Venus</option>
-                    <option value="Moon">Moon</option>
-                    <option value="Mars">Mars</option>
-                    <option value="Jupiter">Jupiter</option>
-                    <option value="Saturn">Saturn</option>
-                    <option value="Uranus">Uranus</option>
-                </select>
-                <button onclick="calculatePlanetWeight()">calculate weight on ${planet}</button>
-                    ${returnPlanetaryWeight}
+                <div id="boks" class="float-div" onmouseover="setBoxShadow()">
+                    <h1>Tjohei da var vi igang!</h1>
+                    <input id="earthWeightInput" type="text" value="${earthWeight}"/>
+                    <select id="planets">
+                        <option value="Mercury">Mercury</option>
+                        <option value="Venus">Venus</option>
+                        <option value="Moon">Moon</option>
+                        <option value="Mars">Mars</option>
+                        <option value="Jupiter">Jupiter</option>
+                        <option value="Saturn">Saturn</option>
+                        <option value="Uranus">Uranus</option>
+                    </select>
+                    <button onclick="calculatePlanetWeight()">calculate weight on ${planet}</button>
+                        ${returnPlanetaryWeight}
+                </div>
             `;
             setInitalValue();
         }
@@ -108,11 +111,12 @@
             returnMessage();
             updateView();
         }
-        function setInitalValue(){
-            if (planetWeight == null || planetWeight == undefined) {
-                planetWeight = '';
-            }
+        function setBoxShadow(){
+            planet == null || planet == undefined ? planet = '' :
+            planet == 'Mercury' ? boxDiv.classList.toggle('mercury-div') : 
+            'error boxShadow';
         }
+        
     </script>
 </body>
 </html>
