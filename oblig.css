@@ -1,0 +1,24 @@
+.darkmode {
+    background-color:black;
+    color: white;
+}
+
+.float-div {
+    padding: 8px 25px;
+    width: 32em;
+    height: 20em;
+    align-self: auto;
+    background: rgb(76, 74, 71);
+    color: rgb(219, 192, 73);
+}
+.float-div h1 {
+    color: white;
+}
+.mercury-div {
+    padding: 8px 25px;
+    width: 32em;
+    height: 20em;
+    align-self: auto;
+    background: url('https://futurism.com/wp-content/uploads/2014/02/screen-shot-2015-04-28-at-12.19.13-pm-600x600.jpg');
+    color: rgb(221, 184, 17);
+}
