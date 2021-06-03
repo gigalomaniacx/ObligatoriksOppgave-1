@@ -6,124 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obligatorisk Oppgave</title>
     <link rel="stylesheet" href="oblig.css"/>
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
 </head>
 <body>
     <div id="app"></div>
     
-    <script>
-        //model
-        const app = document.getElementById('app');
-        // let boxDiv = document.getElementById('boks');
-        let planetDropDown;
-        let earthWeight;
-        let planet;
-        let planetWeight;
-        let returnPlanetaryWeight = '';
-
-        
-        // function setPlanetWeight(Gs){
-        //     planetWeight = getPlanetWeight(Gs);
-        //     returnMessage();
-        //     updateView();
-        // }
-        function returnMessage(){
-            returnPlanetaryWeight = `Your weight on the planet: ${planet} is ${planetWeight}.`;
-        }
-        
-        // //view
-        updateView();
-        function updateView() {
-            app.innerHTML = `
-                <div id="boks" class="float-div" onmouseover="setBoxShadow()">
-                    <h1>Tjohei da var vi igang!</h1>
-                    <input id="earthWeightInput" type="text" value="${earthWeight}"/>
-                    <select id="planets">
-                        <option value="Mercury">Mercury</option>
-                        <option value="Venus">Venus</option>
-                        <option value="Moon">Moon</option>
-                        <option value="Mars">Mars</option>
-                        <option value="Jupiter">Jupiter</option>
-                        <option value="Saturn">Saturn</option>
-                        <option value="Uranus">Uranus</option>
-                    </select>
-                    <button onclick="calculatePlanetWeight()">calculate weight on ${planet}</button>
-                        ${returnPlanetaryWeight}
-                </div>
-            `;
-            
-        }
-
-        //controller
-        
-        function calculatePlanetWeight() {
-            planetDropDown = document.getElementById('planets');
-            earthWeight = document.getElementById('earthWeightInput').value;
-            
-            planetDropDown.value == 'Mercury' ? getPlanetWeight('Mercury', 0.38) :
-            planetDropDown.value == 'Venus' ? getPlanetWeight('Venus', 0.904) :
-            planetDropDown.value == 'Moon' ? getPlanetWeight('Moon', 0.1654) :
-            planetDropDown.value == 'Mars' ? getPlanetWeight('Mars', 0.38) :
-            planetDropDown.value == 'Jupiter' ? getPlanetWeight('Jupiter', 2.528) :
-            planetDropDown.value == 'Saturn' ? getPlanetWeight('Saturn', 1.065) :
-            planetDropDown.value == 'Uranus' ? getPlanetWeight('Uranus', 0.886) :
-            planetDropDown.value == 'Venus' ? getPlanetWeight('Venus', 0.904) :
-            planetDropDown.value == 'Venus' ? getPlanetWeight('Venus', 0.904) :
-            'Error that is not handled D: (ups)';
-        //     if (planetDropDown.value == 'Mercury'){
-        //         // planetWeight = earthWeight * 0.38;
-        //         // planetWeight = getPlanetWeight(0.38);
-                
-        //         getPlanetWeight('Mercury',0.38);
-        //         // returnPlanetaryWeight = `Your weight on the planet: ${planet} is ${planetWeight}.`;
-        //         // returnMessage();
-        //         // updateView();
-        //     }
-        //     if (planetDropDown.value == 'Venus') {
-                
-        //         getPlanetWeight('Venus',0.904);
-        //     }
-        //     if (planetDropDown.value == 'Moon') {
-                
-        //         getPlanetWeight('Moon', 0.1654);
-        //     }
-        //     if (planetDropDown.value == 'Mars') {
-                
-        //         getPlanetWeight('Mars', 0.1654);
-        //     }
-        //     if (planetDropDown.value == 'Jupiter') {
-                
-        //         getPlanetWeight('Jupiter', 2.528);
-        //     }
-        //     if (planetDropDown.value == 'Saturn') {
-                
-        //         getPlanetWeight('Saturn', 1.065);
-        //     }
-        //     if (planetDropDown.value == 'Uranus') {
-                
-        //         getPlanetWeight('Uranus', 0.886);
-        //     }
-        }
-
-        function getPlanetWeight(planetName,Gs){
-            planet = planetName;
-            planetWeight = earthWeight * Gs;
-            planetDropDown.value = planetName;
-            returnMessage();
-            updateView();
-        }
-        function setBoxShadow(){
-            let boxDiv = document.getElementById('boks');
-            planet == null || planet == undefined ? planet = 'Mercury' :
-            planet == 'Mercury' ? boxDiv.classList.add('mercury-div') :
-            planet == 'Venus' ? boxDiv.classList.add('venus-div') :
-            planet == 'Moon' ? boxDiv.classList.add('moon-div') :
-            planet == 'Mars' ? boxDiv.classList.add('mars-div') :
-            planet == 'Jupiter' ? boxDiv.classList.add('jupiter-div') :
-            planet == 'Saturn' ? boxDiv.classList.add('saturn-div') :
-            planet == 'Uranus' ? boxDiv.classList.add('uranus-div') :
-            console.log('error boxShadow');
-        }
-        
-    </script>
+    <script src="view.js"></script>
 </body>
 </html>
