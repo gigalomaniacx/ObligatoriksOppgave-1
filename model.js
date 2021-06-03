@@ -1,3 +1,6 @@
-const app = document.getElementById('app');
-let earthWeight = 69;
-let planet = 'Mercury';
+// const app = document.getElementById('app');
+let planetDropDown;
+let earthWeight;
+let planet;
+let planetWeight;
+let returnPlanetaryWeight = '';
