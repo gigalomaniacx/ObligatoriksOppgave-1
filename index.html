@@ -13,7 +13,7 @@
     <script>
         //model
         const app = document.getElementById('app');
-        const boxDiv = document.getElementById('boks');
+        // let boxDiv = document.getElementById('boks');
         let planetDropDown;
         let earthWeight;
         let planet;
@@ -50,7 +50,7 @@
                         ${returnPlanetaryWeight}
                 </div>
             `;
-            setInitalValue();
+            
         }
 
         //controller
@@ -112,9 +112,16 @@
             updateView();
         }
         function setBoxShadow(){
-            planet == null || planet == undefined ? planet = '' :
-            planet == 'Mercury' ? boxDiv.classList.toggle('mercury-div') : 
-            'error boxShadow';
+            let boxDiv = document.getElementById('boks');
+            planet == null || planet == undefined ? planet = 'Mercury' :
+            planet == 'Mercury' ? boxDiv.classList.add('mercury-div') :
+            planet == 'Venus' ? boxDiv.classList.add('venus-div') :
+            planet == 'Moon' ? boxDiv.classList.add('moon-div') :
+            planet == 'Mars' ? boxDiv.classList.add('mars-div') :
+            planet == 'Jupiter' ? boxDiv.classList.add('jupiter-div') :
+            planet == 'Saturn' ? boxDiv.classList.add('saturn-div') :
+            planet == 'Uranus' ? boxDiv.classList.add('uranus-div') :
+            console.log('error boxShadow');
         }
         
     </script>
