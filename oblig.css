@@ -17,41 +17,43 @@
 
 .mercury-div {
     background: url('https://futurism.com/wp-content/uploads/2014/02/screen-shot-2015-04-28-at-12.19.13-pm-600x600.jpg');
+    background-size:auto;
+    background-repeat: no-repeat;
     color: rgb(0, 48, 136);
 }
 .venus-div {
     background: url('https://westherald.com/wp-content/uploads/2019/03/Venus-1024x576.jpg');
-    background-size: 100%;
+    background-size:auto;
     background-repeat: no-repeat;
     color: rgb(255, 255, 255);
 }
 .moon-div {
     background: url('https://media.cntraveler.com/photos/593968f3201d7a284a0ba4ea/master/w_1200,c_limit/GettyImages-490137064.jpg');
-    background-size: 100%;
+    background-size:auto;
     background-repeat: no-repeat;
     color: rgb(0, 48, 136);
 }
 .mars-div {
     background: url('https://www.dailydot.com/wp-content/uploads/2018/04/mars.jpg');
-    background-size: 100%;
+    background-size:auto;
     background-repeat: no-repeat;
     color: rgb(0, 48, 136);
 }
 .jupiter-div {
     background: url('https://webtopnews.com/wp-content/uploads/2018/12/Jupiter-Juno-storms-Stunning-footage-captured-Photo.jpg');
-    background-size: 100%;
+    background-size: auto;
     background-repeat: no-repeat;
     color: rgb(0, 48, 136);
 }
 .saturn-div {
     background: url('https://solarsystem.nasa.gov/system/news_items/main_images/712_PIA22766_hires.jpg');
-    background-size: 100%;
+    background-size: auto;
     background-repeat: no-repeat;
     color: rgb(0, 48, 136);
 }
 .uranus-div {
     background: url('https://specials-images.forbesimg.com/imageserve/5f91806c76fcfa4a1e885d7c/960x0.jpg?cropX1=0&cropX2=4000&cropY1=309&cropY2=2184');
-    background-size: 100%;
+    background-size: auto;
     background-repeat: no-repeat;
     color: rgb(0, 48, 136);
 }
