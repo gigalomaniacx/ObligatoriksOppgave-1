@@ -16,7 +16,8 @@
 }
 
 .mercury-div {
-    background: url('https://futurism.com/wp-content/uploads/2014/02/screen-shot-2015-04-28-at-12.19.13-pm-600x600.jpg');
+    background-color: rgb(48, 39 82);
+    background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/blogs/7562/images/HMizNhYJT52Gnnu5q3l6_069EA5D6-785D-4D60-9A8D-DDFF24CACEAA-12597-000006D20CAB2EC4.JPEG');
     background-size:auto;
     background-repeat: no-repeat;
     color: rgb(0, 48, 136);
@@ -41,7 +42,7 @@
 }
 .jupiter-div {
     background: url('https://webtopnews.com/wp-content/uploads/2018/12/Jupiter-Juno-storms-Stunning-footage-captured-Photo.jpg');
-    background-size: auto;
+    background-size: 100%;
     background-repeat: no-repeat;
     color: rgb(0, 48, 136);
 }
