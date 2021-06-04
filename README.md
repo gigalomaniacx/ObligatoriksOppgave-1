@@ -1,16 +1,25 @@
-# Obligatorisk Oppgave 1
+# Obligatorisk oppgave 1 - Modul1 
+---
+## [Oppgavetext](https://github.com/gigalomaniacx/ObligatoriksOppgave-1/blob/main/opgavetext.md)
+
+#### små problemene
+Har ikke fådt dropdown menyen til å opdatere viewet på on change.
+planet variabelen blir ikke blank med logikken bak.
+
+CSS'en kunne ha vært bedre
+
+Vil si at jeg har oppfylt kravene til oppgaven, men den kan bli forbedret. noe jeg sansynelighvis kommer til å gjøre, siden det var jo litt gøy.
 ___
-#### Den første obligatoriske oppgaven er fri - dere kan lage hva dere vil, men bruk JS, HTML & CSS - og den må inneholde følgende punkter som dere til nå i kurset skal ha vært igjennom
+#### etterord
 
-#### Oppgaven skal inneholde: 
- - ###### Skal være i Mvc (model, view, controller)
- - ###### Minst 1 Eventhandler (onclick etc.)
- - ###### Minst 1 If-setning  (med && eller || , eller begge)
- - ###### Minst en funksjon som returnerer en verdi
- - ###### Minst en funksjon som bruker parameter
- - - ###### (ps. de to siste KAN være samme funksjon)
- - ###### Minst 3 unit tester til sammen av funksjonene du bruker (ikke test mot view)
+Fikk bedre forståelse for classlist style med js.
+Ser jeg må se mere på logikk med if.
+Kan kansje være lurt å starte med Qunit på enkelte funksjoner.
 
-#### Det finnes to typer funksjoner som dere trenger tenke på nå: 
-##### 1. "Rene" funksjoner - funksjoner som utfører én oppgave - og returnerer noe. Brukes av andre funksjoner.
-##### 2. Controller funksjoner - funksjoner som endrer noe i modellen og kaller på/refresher viewet.
+##### En liste over hva jeg vil implementere etterhvert jeg ser jeg kan ta meg tid til det
+
+- [ ] Få css'en til å bli mer imponerende
+- [ ] Gjøre bakgrunnen til calculator div'en litt gjennomsiktig. 
+- [ ] Animere en overgang på bakgrunns bildene?
+- [ ] Opdater planet navnet på dropdown meny forandringer (fikk ikke onchange til å fungere med ```<select>``` enda)
+
