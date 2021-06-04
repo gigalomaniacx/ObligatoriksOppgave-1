@@ -4,7 +4,7 @@ function setEarthWeightBlank() {
 }
 
 function returnMessage(){
-    if (earthWeight != null && earthWeight != '') {
+    if (earthWeight != null || earthWeight != '') {
         returnPlanetaryWeight = `Your weight on the planet: ${planet} is ${planetWeight}.`
     }
     else{
@@ -23,7 +23,7 @@ function calculatePlanetWeight() {
     planetDropDown.value == 'Jupiter' ? getPlanetWeight('Jupiter', 2.528) :
     planetDropDown.value == 'Saturn' ? getPlanetWeight('Saturn', 1.065) :
     planetDropDown.value == 'Uranus' ? getPlanetWeight('Uranus', 0.886) :
-    'Error that is not handled D: (ups)';
+    console.log('Error in calculatePlanetWeight that is not handled D: (ups)');
 }
 
 //function that returns a value with return(exercise requirement)
