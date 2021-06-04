@@ -2,6 +2,14 @@
 ---
 ## [Oppgavetext](https://github.com/gigalomaniacx/ObligatoriksOppgave-1/blob/main/opgavetext.md)
 
+---
+### Opgave filene:
+[index.html](https://github.com/gigalomaniacx/ObligatoriksOppgave-1/blob/main/index.html)
+[css](https://github.com/gigalomaniacx/ObligatoriksOppgave-1/blob/main/oblig.css)
+[model](https://github.com/gigalomaniacx/ObligatoriksOppgave-1/blob/main/model.js)
+[view](https://github.com/gigalomaniacx/ObligatoriksOppgave-1/blob/main/view.js)
+[controller](https://github.com/gigalomaniacx/ObligatoriksOppgave-1/blob/main/controller.js)
+[test.html](https://github.com/gigalomaniacx/ObligatoriksOppgave-1/blob/main/test.html)
 #### små problemene
 Har ikke fådt dropdown menyen til å opdatere viewet på on change.
 planet variabelen blir ikke blank med logikken bak.
