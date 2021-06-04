@@ -32,12 +32,25 @@
             actual = earthWeight;
             expected = 44;
             assert.equal(actual, expected);
+            assert.ok((assert.equal.actual == assert.equal.expected) , `variable EarthWeight returns ${earthWeight}.`);
+        });
+        QUnit.test('Shold return message to put in value in txt field', function(assert){
+          var actual;
+          earthWeight = null;
+          returnMessage();
+          actual = returnPlanetaryWeight;
+          expected = `Please enter a weight in the txt field`;
+          assert.equal(actual, expected);
+          assert.ok((assert.equal.actual == assert.equal.expected), `variable returnPlanetary Weight returns: ${returnPlanetaryWeight}`);
         });
     });
+
+    // default example from Qunit getting started
     QUnit.module('add', function() {
       QUnit.test('should add two numbers', function(assert) {
         assert.equal(add(1, 1), 2);
       });
     });
+    
   </script>
 </body>
