@@ -1,8 +1,7 @@
 # Obligatorisk oppgave 1 - Modul1 
----
+
 ## [Oppgavetext](https://github.com/gigalomaniacx/ObligatoriksOppgave-1/blob/main/opgavetext.md)
 
----
 ### Opgave filene:
 ###### [index.html](https://github.com/gigalomaniacx/ObligatoriksOppgave-1/blob/main/index.html)
 ###### [css](https://github.com/gigalomaniacx/ObligatoriksOppgave-1/blob/main/oblig.css)
