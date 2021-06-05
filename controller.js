@@ -4,7 +4,7 @@ function setEarthWeightBlank() {
 }
 
 function returnMessage(){
-    if (earthWeight != null || earthWeight != '') {
+    if (earthWeight != null && earthWeight != '') {
         returnPlanetaryWeight = `Your weight on the planet: ${planet} is ${planetWeight}.`
     }
     else{
