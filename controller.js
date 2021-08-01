@@ -63,4 +63,5 @@ function bodyBackgroundImg(){
     planet == 'Saturn' ? setCssClass('saturn-div') :
     planet == 'Uranus' ? setCssClass('uranus-div') :
     console.log('error boxShadow');
+    updateView();
 }
